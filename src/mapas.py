@@ -3,7 +3,13 @@
 import folium
 from coordenadas import Coordenadas
 import webbrowser
-import os
+import os, csv
+from collections import namedtuple
+
+Coordinates=namedtuple("Coordinates","latitude, longitude")
+
+
+
 
 def crea_mapa(coordenadas, zoom=9):
     '''
